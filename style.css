@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "brandon-grotesque";
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 998;
+    width: 100%;
+}
+
+.div_header{
+    display: flex;
+}
+
+.logo{
+    height: 200px;
+}
+
+.titre_nav_bar{
+    width: 100%;
+    text-align: center;
+}
+
+.div_titre{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: red;
+    font-size: 50px;
+}
+
+.div_bar input[type=text]{
+    font-size: 24px;
+    width: 95%;
+    border-radius: 30px;
+    padding: 4px 16px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.nav a {
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 15px;
+    margin: 24px;
+}
+.nav a:hover {
+    background-color:red;
+    color: black;  
+}
+
+.sidebar{
+    position: fixed;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 220px;
+    background-color: crimson;
+    border-radius: 15px;
+}
+.checkbox{
+    margin: 5px;
+    height: 32px;
+    width: 32px;
+}
+.reglage_checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.paragraphe_accueil{
+    margin: 20px;
+    margin-top: 220px;
+}
+
+footer{
+    bottom: 0;
+    background-color: aquamarine;
+    width: 100%;
+    z-index: 999;
+}
+
+@media screen and (max-width: 800px){
+    .logo{
+        height: 150px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .div_titre{
+        margin: 5px;
+    }
+
+    .nav a {
+        font-size: 10px;
+        margin: 2px;
+        padding: 5px;
+    }
+
+    .div_bar input[type=text]{
+        font-size: 10px;
+        width: 75%;
+        margin: 5px;
+        padding: 5px;
+    }
+}
