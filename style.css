@@ -23,7 +23,8 @@ header{
 }
 
 .logo{
-    height: 200px;
+    height: 180px;
+    margin: 10px;
 }
 
 .titre_nav_bar{
@@ -67,12 +68,17 @@ h1{
     color: black;  
 }
 
+
+.mainpage2{
+    display: flex;
+}
+
 .sidebar{
     position: fixed;
     padding: 5px;
     margin: 10px;
     margin-top: 220px;
-    background-color: crimson;
+    background-color: #EDCF9D;
     border-radius: 15px;
 }
 .checkbox{
@@ -92,9 +98,22 @@ h1{
     color: rgb(184, 184, 184);
 }
 
-.ImageOW{
+.imageow{
     height: 250px;
     border-radius: 20px;
+}
+
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 220px;
+    margin-left: 180px;
+}
+
+.carte{
+    display: flex;
+    margin: 10px;
+    height: 400px;
 }
 
 footer{
@@ -123,7 +142,7 @@ footer{
 
     .nav a {
         font-size: 10px;
-        margin: 2px;
+        margin: 10px;
         padding: 5px;
     }
 
@@ -132,5 +151,30 @@ footer{
         width: 75%;
         margin: 5px;
         padding: 5px;
+    }
+
+    .imageow{
+        height: 100px;
+    }
+
+    .sidebar{
+        padding: 5px;
+        margin: 10px;
+        margin-top: 200px;
+        border-radius: 15px;
+    }
+    .checkbox{
+        margin: 5px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .cartes{
+        margin-top: 200px;
+        margin-left: 160px;
+    }
+
+    .carte{
+        height: 300px;
     }
 }
