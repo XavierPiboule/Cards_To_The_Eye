@@ -6,15 +6,19 @@
 
 body {
     background-size: 20% 20%;
-
     background-color: rgb(0, 0, 32);
   }
+
+.darkbackground{
+    background-color: #FFEBDD;
+}
 
 header{
     position: fixed;
     top: 0;
     z-index: 998;
     width: 100%;
+    border-bottom: 2px solid rgb(0, 0, 32);
 }
 
 .div_header{
@@ -22,9 +26,29 @@ header{
     display: flex;
 }
 
+.darkheader{
+    background-color: #FFEBDD;
+}
+
+
 .logo{
     height: 180px;
     margin: 10px;
+}
+
+.darkmod{
+    text-align: right;
+}
+
+#dark{
+    background-color: #EDCF9D;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#dark:hover{
+    background-color: #FFEBDD;
 }
 
 .titre_nav_bar{
@@ -58,6 +82,7 @@ h1{
     color: black;
     background-color: #EDCF9D;
     text-align: center;
+    border: 2px solid black;
     padding: 10px;
     font-size: 24px;
     border-radius: 15px;
@@ -65,19 +90,18 @@ h1{
 }
 .nav a:hover {
     background-color: #FFEBDD;
-    color: black;  
 }
-
 
 .mainpage2{
     display: flex;
+    padding: 0;
+    margin-top: 250px;
 }
 
 .sidebar{
     position: fixed;
     padding: 5px;
     margin: 10px;
-    margin-top: 220px;
     background-color: #EDCF9D;
     border-radius: 15px;
 }
@@ -86,16 +110,42 @@ h1{
     height: 32px;
     width: 32px;
 }
+
 .reglage_checkbox{
     display: flex;
     align-items: center;
 }
 
-.paragraphe_accueil{
+.tabs{
+    display: flex;
+    margin: 50px;
+}
+
+.tab-button{
+    background-color: #47B1A3;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.paragraphe{
     margin: 20px;
-    margin-top: 200px;
+    margin-top: -20px;
     font-size: 28px;
     color: rgb(184, 184, 184);
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.ow{
+    width: 80%;
+}
+
+.darkparagraphe{
+    color: black;
 }
 
 .imageow{
@@ -106,7 +156,7 @@ h1{
 .cartes{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 220px;
+    margin-top: 10px;
     margin-left: 180px;
 }
 
@@ -114,12 +164,21 @@ h1{
     display: flex;
     margin: 10px;
     height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.carte:hover{
+    transform: scale(1.05);
 }
 
 footer{
     bottom: 0;
     background-color: #47B1A3;
     width: 100%;
+}
+
+.darkfooter{
+    background-color: #EDCF9D;
 }
 
 .txt_footer{
