@@ -92,6 +92,11 @@ h1{
     background-color: #FFEBDD;
 }
 
+.CTA {
+    margin-left: 40%;
+    margin-top: 40px;
+}
+
 .mainpage2{
     display: flex;
     padding: 0;
@@ -177,16 +182,15 @@ h1{
   }
 
 .swiper-slide {
-    text-align: right;
+    text-align: center;
+    padding-top: 10px;
     font-size: 18px;
-    background: #ffffff74;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
     object-fit: cover;
 }
 
