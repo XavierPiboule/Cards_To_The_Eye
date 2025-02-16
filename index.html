@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="darkmode.js" defer></script>
     <script src="tabs.js" defer></script>
+    <script src="slider.js" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/sxh5tuy.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -52,10 +54,33 @@
         <div class="paragraphe active" id="tab1">
             <p><br>Bienvenue sur Cards To The Eye, un site dédié aux explorateurs et collectionneurs passionnés 
                 par l'univers unique d'Outer Wilds ! </br>
-                <img class="imageow" src="OuterWildsImage1.jpg">
-                <img class="imageow" src="OuterWildsImage2.png">
-                <img class="imageow" src="OuterWildsImage3.jpg">
-                <img class="imageow" src="OuterWildsImage4.jpg">
+
+                                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img class="imageow" src="OuterWildsImage1.jpg" alt="Poster outer wilds">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="imageow" src="OuterWildsImage2.png" alt="Masque Nomai sur font noir">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="imageow" src="OuterWildsImage3.jpg" alt="dessin nomai de l'oeuil de l'univers">
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img class="imageow" src="OuterWildsImage4.jpg" alt="fan art du système solaire d'outer wild">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
                 <br>Plongez dans une galaxie de cartes des merveilles cosmiques du système solaire d'Outer Wilds,
                  des mystères anciens et des énigmes fascinantes du jeu. 
                  Ici, chaque carte est une porte d’entrée vers des souvenirs, 
